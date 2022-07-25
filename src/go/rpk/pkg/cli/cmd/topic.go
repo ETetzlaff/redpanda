@@ -44,6 +44,7 @@ func NewTopicCommand(fs afero.Fs) *cobra.Command {
 		topic.NewDescribeCommand(fs),
 		topic.NewListCommand(fs),
 		topic.NewProduceCommand(fs),
+		topic.NewReassignPartitionCommand(fs),
 	)
 
 	return command
